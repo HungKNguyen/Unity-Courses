@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Hung Room.unity
+    guid: a2a6d663bac634f7fa97dfd85437ab12
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e2668641a0a4c45bea1dea36f067d9a4,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 793d02b08120c4fd0b764d60abdba032,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: efff024f4e995470f9816ecec657e480,
+      type: 2}
