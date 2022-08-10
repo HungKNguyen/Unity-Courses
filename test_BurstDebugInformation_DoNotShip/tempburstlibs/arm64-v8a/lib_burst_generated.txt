@@ -172,9 +172,9 @@ Library: lib_burst_generated
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.XR.CoreUtils.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.Timeline.dll
---root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.dll
+--root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.Services.Core.Device.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.dll
 --root-assembly=/Users/hungknguyen/UnityProjects/Unity Courses/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll

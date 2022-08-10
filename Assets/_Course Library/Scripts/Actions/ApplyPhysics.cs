@@ -7,7 +7,7 @@
 public class ApplyPhysics : MonoBehaviour
 {
     private Rigidbody rigidBody = null;
-    private CollisionDetectionMode originalMode = CollisionDetectionMode.Discrete;
+    private CollisionDetectionMode originalMode = CollisionDetectionMode.ContinuousDynamic;
 
     private void Awake()
     {
