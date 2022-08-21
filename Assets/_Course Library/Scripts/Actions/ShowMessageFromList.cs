@@ -54,4 +54,8 @@ public class ShowMessageFromList : MonoBehaviour
         index = value;
         ShowMessage();
     }
+
+    public void CallOnComplete(){
+        OnComplete.Invoke();
+    }
 }

@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 /// Toggle between the direct and ray interactor if the direct interactor isn't touching any objects
 /// Should be placed on a ray interactor
 /// </summary>
-[RequireComponent(typeof(XRRayInteractor))]
+[RequireComponent(typeof(FixedXRInteractorLineVisual))]
 public class ToggleRay : MonoBehaviour
 {
     [Tooltip("Switch even if an object is selected")]
@@ -15,12 +15,15 @@ public class ToggleRay : MonoBehaviour
     [Tooltip("The direct interactor that's switched to")]
     public XRDirectInteractor directInteractor = null;
 
-    private XRRayInteractor rayInteractor = null;
+    public XRRayInteractor rayInteractor = null;
+
+    private FixedXRInteractorLineVisual rayInteractorLineVisual = null;
     private bool isSwitched = false;
 
     private void Awake()
     {
         rayInteractor = GetComponent<XRRayInteractor>();
+        rayInteractorLineVisual = GetComponent<FixedXRInteractorLineVisual>();
         SwitchInteractors(false);
     }
 
@@ -47,6 +50,7 @@ public class ToggleRay : MonoBehaviour
     {
         isSwitched = value;
         rayInteractor.enabled = value;
+        rayInteractorLineVisual.enabled = value;
         directInteractor.enabled = !value;
     }
 }
