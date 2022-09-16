@@ -1403,28 +1403,6 @@ struct NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643
 	Il2CppChar* ____allDigits_4;
 };
 #pragma pack(pop, tp)
-// Native definition for P/Invoke marshalling of System.Number/NumberBuffer
-#pragma pack(push, tp, 1)
-struct NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_pinvoke
-{
-	int32_t ___precision_0;
-	int32_t ___scale_1;
-	int32_t ____sign_2;
-	DigitsAndNullTerminator_tEF216B2D9886B3B6EBDBBA0E540214C013C02ECA ____digits_3;
-	Il2CppChar* ____allDigits_4;
-};
-#pragma pack(pop, tp)
-// Native definition for COM marshalling of System.Number/NumberBuffer
-#pragma pack(push, tp, 1)
-struct NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_com
-{
-	int32_t ___precision_0;
-	int32_t ___scale_1;
-	int32_t ____sign_2;
-	DigitsAndNullTerminator_tEF216B2D9886B3B6EBDBBA0E540214C013C02ECA ____digits_3;
-	Il2CppChar* ____allDigits_4;
-};
-#pragma pack(pop, tp)
 
 // System.ReadOnlySpan`1<System.Byte>
 struct ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D 
@@ -25614,66 +25592,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Number__cctor_m35BE6E5F335A623587DC2C057
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Conversion methods for marshalling of: System.Number/NumberBuffer
-IL2CPP_EXTERN_C void NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshal_pinvoke(const NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643& unmarshaled, NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_pinvoke& marshaled)
-{
-	marshaled.___precision_0 = unmarshaled.___precision_0;
-	marshaled.___scale_1 = unmarshaled.___scale_1;
-	marshaled.____sign_2 = unmarshaled.____sign_2;
-	marshaled.____digits_3 = unmarshaled.____digits_3;
-	marshaled.____allDigits_4 = unmarshaled.____allDigits_4;
-}
-IL2CPP_EXTERN_C void NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshal_pinvoke_back(const NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_pinvoke& marshaled, NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643& unmarshaled)
-{
-	int32_t unmarshaledprecision_temp_0 = 0;
-	unmarshaledprecision_temp_0 = marshaled.___precision_0;
-	unmarshaled.___precision_0 = unmarshaledprecision_temp_0;
-	int32_t unmarshaledscale_temp_1 = 0;
-	unmarshaledscale_temp_1 = marshaled.___scale_1;
-	unmarshaled.___scale_1 = unmarshaledscale_temp_1;
-	int32_t unmarshaled_sign_temp_2 = 0;
-	unmarshaled_sign_temp_2 = marshaled.____sign_2;
-	unmarshaled.____sign_2 = unmarshaled_sign_temp_2;
-	DigitsAndNullTerminator_tEF216B2D9886B3B6EBDBBA0E540214C013C02ECA unmarshaled_digits_temp_3;
-	memset((&unmarshaled_digits_temp_3), 0, sizeof(unmarshaled_digits_temp_3));
-	unmarshaled_digits_temp_3 = marshaled.____digits_3;
-	unmarshaled.____digits_3 = unmarshaled_digits_temp_3;
-	unmarshaled.____allDigits_4 = marshaled.____allDigits_4;
-}
-// Conversion method for clean up from marshalling of: System.Number/NumberBuffer
-IL2CPP_EXTERN_C void NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshal_pinvoke_cleanup(NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_pinvoke& marshaled)
-{
-}
-// Conversion methods for marshalling of: System.Number/NumberBuffer
-IL2CPP_EXTERN_C void NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshal_com(const NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643& unmarshaled, NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_com& marshaled)
-{
-	marshaled.___precision_0 = unmarshaled.___precision_0;
-	marshaled.___scale_1 = unmarshaled.___scale_1;
-	marshaled.____sign_2 = unmarshaled.____sign_2;
-	marshaled.____digits_3 = unmarshaled.____digits_3;
-	marshaled.____allDigits_4 = unmarshaled.____allDigits_4;
-}
-IL2CPP_EXTERN_C void NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshal_com_back(const NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_com& marshaled, NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643& unmarshaled)
-{
-	int32_t unmarshaledprecision_temp_0 = 0;
-	unmarshaledprecision_temp_0 = marshaled.___precision_0;
-	unmarshaled.___precision_0 = unmarshaledprecision_temp_0;
-	int32_t unmarshaledscale_temp_1 = 0;
-	unmarshaledscale_temp_1 = marshaled.___scale_1;
-	unmarshaled.___scale_1 = unmarshaledscale_temp_1;
-	int32_t unmarshaled_sign_temp_2 = 0;
-	unmarshaled_sign_temp_2 = marshaled.____sign_2;
-	unmarshaled.____sign_2 = unmarshaled_sign_temp_2;
-	DigitsAndNullTerminator_tEF216B2D9886B3B6EBDBBA0E540214C013C02ECA unmarshaled_digits_temp_3;
-	memset((&unmarshaled_digits_temp_3), 0, sizeof(unmarshaled_digits_temp_3));
-	unmarshaled_digits_temp_3 = marshaled.____digits_3;
-	unmarshaled.____digits_3 = unmarshaled_digits_temp_3;
-	unmarshaled.____allDigits_4 = marshaled.____allDigits_4;
-}
-// Conversion method for clean up from marshalling of: System.Number/NumberBuffer
-IL2CPP_EXTERN_C void NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshal_com_cleanup(NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643_marshaled_com& marshaled)
-{
-}
 // System.Boolean System.Number/NumberBuffer::get_sign()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NumberBuffer_get_sign_mC684954BFDE42DC401381A6A22FEF12E4B9FCD86 (NumberBuffer_tE874ADE8F26E879B88784939C623CCEEF30C7643* __this, const RuntimeMethod* method) 
 {

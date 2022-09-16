@@ -17060,14 +17060,17 @@ IL2CPP_EXTERN_C  void Enumerator_System_Collections_IEnumerator_Reset_m908684365
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEA8100449F5F8E1FE5AD5887D1E1F785F933824C_gshared (Enumerator_t638C72AD7D96DD201DEA8E97277A2F9381C617A0* __this, const RuntimeMethod* method) 
 {
 	{
-		// if (m_Index >= m_List.Count)
+		// ++m_Index;
 		int32_t L_0 = (int32_t)__this->___m_Index_0;
-		OneOrMore_2_tAF606C442412A5289596368E8705C82028DBA053* L_1 = (OneOrMore_2_tAF606C442412A5289596368E8705C82028DBA053*)(&__this->___m_List_1);
-		int32_t L_2;
-		L_2 = OneOrMore_2_get_Count_m56F1A11ED7D65D34D30AF7E6811E77A1F7F04FEE(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
-		if ((((int32_t)L_0) < ((int32_t)L_2)))
+		__this->___m_Index_0 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		// if (m_Index >= m_List.Count)
+		int32_t L_1 = (int32_t)__this->___m_Index_0;
+		OneOrMore_2_tAF606C442412A5289596368E8705C82028DBA053* L_2 = (OneOrMore_2_tAF606C442412A5289596368E8705C82028DBA053*)(&__this->___m_List_1);
+		int32_t L_3;
+		L_3 = OneOrMore_2_get_Count_m56F1A11ED7D65D34D30AF7E6811E77A1F7F04FEE(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		if ((((int32_t)L_1) < ((int32_t)L_3)))
 		{
-			goto IL_0015;
+			goto IL_0023;
 		}
 	}
 	{
@@ -17075,11 +17078,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEA8100449F5F8E1FE5A
 		return (bool)0;
 	}
 
-IL_0015:
+IL_0023:
 	{
-		// ++m_Index;
-		int32_t L_3 = (int32_t)__this->___m_Index_0;
-		__this->___m_Index_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
 		// return true;
 		return (bool)1;
 	}
@@ -21942,14 +21942,17 @@ IL2CPP_EXTERN_C  RuntimeObject* Enumerator_System_Collections_IDictionaryEnumera
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m994AF529C814D650217BD648246C10F8AA70A78F_gshared (Enumerator_tFF681C2BCDBA5BCCF86CE70C9C01F757AF9C6D11* __this, const RuntimeMethod* method) 
 {
 	{
-		// if (m_Index >= m_List.Count)
+		// ++m_Index;
 		int32_t L_0 = (int32_t)__this->___m_Index_0;
-		OneOrMore_2_t0723C4BAE2AFDD1D25130D2711F7CF2A1170B80A* L_1 = (OneOrMore_2_t0723C4BAE2AFDD1D25130D2711F7CF2A1170B80A*)(&__this->___m_List_1);
-		int32_t L_2;
-		L_2 = OneOrMore_2_get_Count_mABF4512E9B2DFF94A4D59A49B5B409B5B3286A50(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
-		if ((((int32_t)L_0) < ((int32_t)L_2)))
+		__this->___m_Index_0 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		// if (m_Index >= m_List.Count)
+		int32_t L_1 = (int32_t)__this->___m_Index_0;
+		OneOrMore_2_t0723C4BAE2AFDD1D25130D2711F7CF2A1170B80A* L_2 = (OneOrMore_2_t0723C4BAE2AFDD1D25130D2711F7CF2A1170B80A*)(&__this->___m_List_1);
+		int32_t L_3;
+		L_3 = OneOrMore_2_get_Count_mABF4512E9B2DFF94A4D59A49B5B409B5B3286A50(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		if ((((int32_t)L_1) < ((int32_t)L_3)))
 		{
-			goto IL_0015;
+			goto IL_0023;
 		}
 	}
 	{
@@ -21957,11 +21960,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m994AF529C814D650217
 		return (bool)0;
 	}
 
-IL_0015:
+IL_0023:
 	{
-		// ++m_Index;
-		int32_t L_3 = (int32_t)__this->___m_Index_0;
-		__this->___m_Index_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
 		// return true;
 		return (bool)1;
 	}

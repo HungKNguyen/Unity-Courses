@@ -461,6 +461,8 @@ struct DebugUpdater_t245AD21D9DB8115DAD15488899E23C6ED20BFDF2;
 struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// UnityEngine.InputSystem.Controls.DeltaControl
+struct DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B;
 // UnityEngine.Rendering.DocumentationInfo
 struct DocumentationInfo_t6D259378DA8DDBFBE299EB50C2631CC04E1C3A75;
 // UnityEngine.Rendering.DynamicResolutionHandler
@@ -3667,6 +3669,7 @@ struct AtlasNode_tD031D7BFC95A96AAD9C344F59A3621025EA3CBF4  : public RuntimeObje
 };
 
 // UnityEngine.Rendering.AtlasAllocatorDynamic/AtlasNode
+#pragma pack(push, tp, 1)
 struct AtlasNode_tE1393243E3FBC4D627662BB3BD7D37E36687987A 
 {
 	union
@@ -3769,6 +3772,7 @@ struct AtlasNode_tE1393243E3FBC4D627662BB3BD7D37E36687987A
 		uint8_t AtlasNode_tE1393243E3FBC4D627662BB3BD7D37E36687987A__padding[32];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.Rendering.DebugUI/BitField
 struct BitField_t4178A9AD81C436DBE57F464343BA996642134062  : public Field_1_t226E1C169087ABFC1448D9AD905D6E1BC4FCFD4C
@@ -4434,8 +4438,8 @@ struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A  : public InputDevice_t
 {
 	// UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.Pointer::<position>k__BackingField
 	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CpositionU3Ek__BackingField_39;
-	// UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.Pointer::<delta>k__BackingField
-	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CdeltaU3Ek__BackingField_40;
+	// UnityEngine.InputSystem.Controls.DeltaControl UnityEngine.InputSystem.Pointer::<delta>k__BackingField
+	DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___U3CdeltaU3Ek__BackingField_40;
 	// UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.Pointer::<radius>k__BackingField
 	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CradiusU3Ek__BackingField_41;
 	// UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.Pointer::<pressure>k__BackingField
@@ -4624,48 +4628,50 @@ struct InputSystemUIInputModule_tB7D5B53F656D196BB5AF712FA16FEE22B2EE0C58  : pub
 	bool ___m_DeselectOnBackgroundClick_28;
 	// UnityEngine.InputSystem.UI.UIPointerBehavior UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_PointerBehavior
 	int32_t ___m_PointerBehavior_29;
+	// UnityEngine.InputSystem.UI.InputSystemUIInputModule/CursorLockBehavior UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_CursorLockBehavior
+	int32_t ___m_CursorLockBehavior_30;
 	// System.Boolean UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_ActionsHooked
-	bool ___m_ActionsHooked_31;
+	bool ___m_ActionsHooked_32;
 	// System.Boolean UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_NeedToPurgeStalePointers
-	bool ___m_NeedToPurgeStalePointers_32;
+	bool ___m_NeedToPurgeStalePointers_33;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnPointDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnPointDelegate_33;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnPointDelegate_34;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnMoveDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnMoveDelegate_34;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnMoveDelegate_35;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnLeftClickDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnLeftClickDelegate_35;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnLeftClickDelegate_36;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnRightClickDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnRightClickDelegate_36;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnRightClickDelegate_37;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnMiddleClickDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnMiddleClickDelegate_37;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnMiddleClickDelegate_38;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnScrollWheelDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnScrollWheelDelegate_38;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnScrollWheelDelegate_39;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnTrackedDevicePositionDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnTrackedDevicePositionDelegate_39;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnTrackedDevicePositionDelegate_40;
 	// System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnTrackedDeviceOrientationDelegate
-	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnTrackedDeviceOrientationDelegate_40;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___m_OnTrackedDeviceOrientationDelegate_41;
 	// System.Action`1<System.Object> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_OnControlsChangedDelegate
-	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___m_OnControlsChangedDelegate_41;
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___m_OnControlsChangedDelegate_42;
 	// System.Int32 UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_CurrentPointerId
-	int32_t ___m_CurrentPointerId_42;
+	int32_t ___m_CurrentPointerId_43;
 	// System.Int32 UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_CurrentPointerIndex
-	int32_t ___m_CurrentPointerIndex_43;
+	int32_t ___m_CurrentPointerIndex_44;
 	// UnityEngine.InputSystem.UI.UIPointerType UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_CurrentPointerType
-	int32_t ___m_CurrentPointerType_44;
+	int32_t ___m_CurrentPointerType_45;
 	// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Int32> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_PointerIds
-	InlinedArray_1_tC2490B07B1DD813665B621955586CF31457DB284 ___m_PointerIds_45;
+	InlinedArray_1_tC2490B07B1DD813665B621955586CF31457DB284 ___m_PointerIds_46;
 	// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputControl> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_PointerTouchControls
-	InlinedArray_1_t41B0BE9148DA71A79EE32EDB0E82E219783F9BF8 ___m_PointerTouchControls_46;
+	InlinedArray_1_t41B0BE9148DA71A79EE32EDB0E82E219783F9BF8 ___m_PointerTouchControls_47;
 	// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.UI.PointerModel> UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_PointerStates
-	InlinedArray_1_t6E2851F85C23093EDE233F71F5CE3D6D08FAE920 ___m_PointerStates_47;
+	InlinedArray_1_t6E2851F85C23093EDE233F71F5CE3D6D08FAE920 ___m_PointerStates_48;
 	// UnityEngine.InputSystem.UI.NavigationModel UnityEngine.InputSystem.UI.InputSystemUIInputModule::m_NavigationState
-	NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2 ___m_NavigationState_48;
+	NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2 ___m_NavigationState_49;
 };
 
 struct InputSystemUIInputModule_tB7D5B53F656D196BB5AF712FA16FEE22B2EE0C58_StaticFields
 {
 	// System.Collections.Generic.Dictionary`2<UnityEngine.InputSystem.InputAction,UnityEngine.InputSystem.UI.InputSystemUIInputModule/InputActionReferenceState> UnityEngine.InputSystem.UI.InputSystemUIInputModule::s_InputActionReferenceCounts
-	Dictionary_2_t609CD6E7E686007E5CF00E6A12C74A3B3106EF96* ___s_InputActionReferenceCounts_30;
+	Dictionary_2_t609CD6E7E686007E5CF00E6A12C74A3B3106EF96* ___s_InputActionReferenceCounts_31;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

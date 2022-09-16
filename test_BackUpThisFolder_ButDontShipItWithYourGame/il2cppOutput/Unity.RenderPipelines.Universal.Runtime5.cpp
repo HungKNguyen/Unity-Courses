@@ -1951,8 +1951,8 @@ struct U3CU3Ec_t114D43095CC4E03878798ED5A9513EA64ED9D96B_StaticFields
 {
 	// UnityEngine.Rendering.Universal.UniversalRenderer/<>c UnityEngine.Rendering.Universal.UniversalRenderer/<>c::<>9
 	U3CU3Ec_t114D43095CC4E03878798ED5A9513EA64ED9D96B* ___U3CU3E9_0;
-	// System.Predicate`1<UnityEngine.Rendering.Universal.ScriptableRenderPass> UnityEngine.Rendering.Universal.UniversalRenderer/<>c::<>9__76_0
-	Predicate_1_tDA2CE3363E0111BA17BFCC1AEBFB72B6F673BE0F* ___U3CU3E9__76_0_1;
+	// System.Predicate`1<UnityEngine.Rendering.Universal.ScriptableRenderPass> UnityEngine.Rendering.Universal.UniversalRenderer/<>c::<>9__78_0
+	Predicate_1_tDA2CE3363E0111BA17BFCC1AEBFB72B6F673BE0F* ___U3CU3E9__78_0_1;
 };
 
 // UnityEngine.Rendering.Universal.UniversalRenderer/Profiling
@@ -5306,6 +5306,8 @@ struct UniversalRenderer_t31019D4AD52F646128E0D1649E7B87E33BA36D8A_StaticFields
 {
 	// System.Collections.Generic.List`1<UnityEngine.Rendering.ShaderTagId> UnityEngine.Rendering.Universal.UniversalRenderer::k_DepthNormalsOnly
 	List_1_t4673975A297A80D4D4A65EB5A2BE3B6BD1EED9AF* ___k_DepthNormalsOnly_42;
+	// System.Collections.Generic.List`1<UnityEngine.XR.XRDisplaySubsystem> UnityEngine.Rendering.Universal.UniversalRenderer::displaySubsystemList
+	List_1_tA7666C6690CE2AEE97571615AD3AFCE2BB020597* ___displaySubsystemList_93;
 };
 
 // UnityEngine.Rendering.Universal.UniversalRendererData
@@ -7796,8 +7798,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mE33B141F9D54298EC0F0ECB24
 		return;
 	}
 }
-// System.Boolean UnityEngine.Rendering.Universal.UniversalRenderer/<>c::<Setup>b__76_0(UnityEngine.Rendering.Universal.ScriptableRenderPass)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CSetupU3Eb__76_0_mAA144A5D2A941D1C0306AD6F6DA7E0FEFA91D059 (U3CU3Ec_t114D43095CC4E03878798ED5A9513EA64ED9D96B* __this, ScriptableRenderPass_tEA38F6C7AD8D111A2251E4C2A7530BCEE7D6D2B0* ___x0, const RuntimeMethod* method) 
+// System.Boolean UnityEngine.Rendering.Universal.UniversalRenderer/<>c::<Setup>b__78_0(UnityEngine.Rendering.Universal.ScriptableRenderPass)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CSetupU3Eb__78_0_mB10C0D1B1B12A86B83E9975ED08549D1AB2A521A (U3CU3Ec_t114D43095CC4E03878798ED5A9513EA64ED9D96B* __this, ScriptableRenderPass_tEA38F6C7AD8D111A2251E4C2A7530BCEE7D6D2B0* ___x0, const RuntimeMethod* method) 
 {
 	{
 		// bool hasPassesAfterPostProcessing = activeRenderPassQueue.Find(x => x.renderPassEvent == RenderPassEvent.AfterRendering) != null;

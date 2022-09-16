@@ -6142,8 +6142,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_PrepareConstrainedRegions
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeBuffer_ReleasePointer_m8588E0BA9949D7BB8197EDC7FDBA9828B479814D (SafeBuffer_t75FD9565BE645665AB242CA8C8BB22E1A933DFCE* __this, const RuntimeMethod* method) ;
 // System.Void System.Runtime.InteropServices.SafeBuffer::AcquirePointer(System.Byte*&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeBuffer_AcquirePointer_mBAF23D96C2A0AE06C0A5606433D4850BE99B99FE (SafeBuffer_t75FD9565BE645665AB242CA8C8BB22E1A933DFCE* __this, uint8_t** ___pointer0, const RuntimeMethod* method) ;
-// System.Void System.Buffer::Memcpy(System.Byte*,System.Byte*,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1 (uint8_t* ___dest0, uint8_t* ___src1, int32_t ___len2, const RuntimeMethod* method) ;
+// System.Void System.Buffer::Memcpy(System.Byte*,System.Byte*,System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217 (uint8_t* ___dest0, uint8_t* ___src1, int32_t ___len2, bool ___useICall3, const RuntimeMethod* method) ;
 // System.ReadOnlySpan`1<T> System.Span`1<System.Byte>::op_Implicit(System.Span`1<T>)
 inline ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D Span_1_op_Implicit_mD249188242C0C9D3192A31E9F7FA74C683F05B84 (Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 ___span0, const RuntimeMethod* method)
 {
@@ -6812,7 +6812,7 @@ IL_0016:
 		RuntimeObject* L_4 = ___obj0;
 		NullCheck(L_3);
 		bool L_5;
-		L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(110 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(109 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_3, L_4);
 		if (L_5)
 		{
 			goto IL_002f;
@@ -7643,7 +7643,7 @@ IL_0014:
 		bool L_9 = ___serialization3;
 		NullCheck(L_8);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker1< String_t*, bool >::Invoke(121 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< String_t*, bool >::Invoke(120 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_8, L_9);
 		V_1 = L_10;
 		NullCheck(L_8);
 		bool L_11;
@@ -8599,7 +8599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RuntimePropertyInfo_FormatNameAndSi
 		bool L_1 = ___serialization0;
 		NullCheck(L_0);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker1< String_t*, bool >::Invoke(121 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< String_t*, bool >::Invoke(120 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_0, L_1);
 		StringBuilder_t* L_3 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
 		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_3, L_2, NULL);
@@ -18778,7 +18778,7 @@ IL_0043:
 		SafeBuffer_t75FD9565BE645665AB242CA8C8BB22E1A933DFCE* L_13 = __this->____buffer_4;
 		if (!L_13)
 		{
-			goto IL_0095;
+			goto IL_0096;
 		}
 	}
 	{
@@ -18789,13 +18789,13 @@ IL_0043:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0083:
+FINALLY_0084:
 			{// begin finally (depth: 1)
 				{
 					uint8_t* L_14 = V_5;
 					if ((((intptr_t)L_14) == ((intptr_t)((uintptr_t)0))))
 					{
-						goto IL_0094;
+						goto IL_0095;
 					}
 				}
 				{
@@ -18804,7 +18804,7 @@ FINALLY_0083:
 					SafeBuffer_ReleasePointer_m8588E0BA9949D7BB8197EDC7FDBA9828B479814D(L_15, NULL);
 				}
 
-IL_0094:
+IL_0095:
 				{
 					return;
 				}
@@ -18820,8 +18820,8 @@ IL_0094:
 			int64_t L_19 = V_0;
 			int64_t L_20 = __this->____offset_9;
 			int32_t L_21 = V_2;
-			Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1(L_17, ((uint8_t*)il2cpp_codegen_add((intptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_18, ((intptr_t)L_19))), ((intptr_t)L_20))), L_21, NULL);
-			goto IL_00a5;
+			Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217(L_17, ((uint8_t*)il2cpp_codegen_add((intptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_18, ((intptr_t)L_19))), ((intptr_t)L_20))), L_21, (bool)1, NULL);
+			goto IL_00a7;
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -18829,16 +18829,16 @@ IL_0094:
 		}
 	}
 
-IL_0095:
+IL_0096:
 	{
 		uint8_t* L_22 = V_3;
 		uint8_t* L_23 = __this->____mem_5;
 		int64_t L_24 = V_0;
 		int32_t L_25 = V_2;
-		Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1(L_22, ((uint8_t*)il2cpp_codegen_add((intptr_t)L_23, ((intptr_t)L_24))), L_25, NULL);
+		Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217(L_22, ((uint8_t*)il2cpp_codegen_add((intptr_t)L_23, ((intptr_t)L_24))), L_25, (bool)1, NULL);
 	}
 
-IL_00a5:
+IL_00a7:
 	{
 		V_4 = (uint8_t*)((uintptr_t)0);
 		int64_t* L_26 = (&__this->____position_8);
@@ -19314,7 +19314,7 @@ IL_0081:
 		SafeBuffer_t75FD9565BE645665AB242CA8C8BB22E1A933DFCE* L_26 = __this->____buffer_4;
 		if (!L_26)
 		{
-			goto IL_00f6;
+			goto IL_00f7;
 		}
 	}
 	{
@@ -19343,13 +19343,13 @@ IL_00b2:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00e4:
+FINALLY_00e5:
 			{// begin finally (depth: 1)
 				{
 					uint8_t* L_31 = V_5;
 					if ((((intptr_t)L_31) == ((intptr_t)((uintptr_t)0))))
 					{
-						goto IL_00f5;
+						goto IL_00f6;
 					}
 				}
 				{
@@ -19358,7 +19358,7 @@ FINALLY_00e4:
 					SafeBuffer_ReleasePointer_m8588E0BA9949D7BB8197EDC7FDBA9828B479814D(L_32, NULL);
 				}
 
-IL_00f5:
+IL_00f6:
 				{
 					return;
 				}
@@ -19375,8 +19375,8 @@ IL_00f5:
 			uint8_t* L_37 = V_3;
 			int32_t L_38;
 			L_38 = ReadOnlySpan_1_get_Length_m54864A0BB817050A9110E85BB5FB31EF63699982_inline((&___buffer0), ReadOnlySpan_1_get_Length_m54864A0BB817050A9110E85BB5FB31EF63699982_RuntimeMethod_var);
-			Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1(((uint8_t*)il2cpp_codegen_add((intptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_34, ((intptr_t)L_35))), ((intptr_t)L_36))), L_37, L_38, NULL);
-			goto IL_010c;
+			Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217(((uint8_t*)il2cpp_codegen_add((intptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_34, ((intptr_t)L_35))), ((intptr_t)L_36))), L_37, L_38, (bool)1, NULL);
+			goto IL_010e;
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -19384,17 +19384,17 @@ IL_00f5:
 		}
 	}
 
-IL_00f6:
+IL_00f7:
 	{
 		uint8_t* L_39 = __this->____mem_5;
 		int64_t L_40 = V_0;
 		uint8_t* L_41 = V_3;
 		int32_t L_42;
 		L_42 = ReadOnlySpan_1_get_Length_m54864A0BB817050A9110E85BB5FB31EF63699982_inline((&___buffer0), ReadOnlySpan_1_get_Length_m54864A0BB817050A9110E85BB5FB31EF63699982_RuntimeMethod_var);
-		Buffer_Memcpy_m87345ACEE449F8CEA42341BC9F4AFC3743EF96D1(((uint8_t*)il2cpp_codegen_add((intptr_t)L_39, ((intptr_t)L_40))), L_41, L_42, NULL);
+		Buffer_Memcpy_mB203712DD2D0E5DF1CF52F752638F8B94E03E217(((uint8_t*)il2cpp_codegen_add((intptr_t)L_39, ((intptr_t)L_40))), L_41, L_42, (bool)1, NULL);
 	}
 
-IL_010c:
+IL_010e:
 	{
 		V_4 = (uint8_t*)((uintptr_t)0);
 		int64_t* L_43 = (&__this->____position_8);

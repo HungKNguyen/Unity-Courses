@@ -1776,6 +1776,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 };
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=144
+#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D144_t023031078A4D5CACFAF6FAC01AF3EF50C233B8F0 
 {
 	union
@@ -1789,8 +1790,10 @@ struct __StaticArrayInitTypeSizeU3D144_t023031078A4D5CACFAF6FAC01AF3EF50C233B8F0
 		uint8_t __StaticArrayInitTypeSizeU3D144_t023031078A4D5CACFAF6FAC01AF3EF50C233B8F0__padding[144];
 	};
 };
+#pragma pack(pop, tp)
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
+#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D24_tDA29C1CE09CD3A30099C8B146E9FEF78D228D62A 
 {
 	union
@@ -1804,6 +1807,7 @@ struct __StaticArrayInitTypeSizeU3D24_tDA29C1CE09CD3A30099C8B146E9FEF78D228D62A
 		uint8_t __StaticArrayInitTypeSizeU3D24_tDA29C1CE09CD3A30099C8B146E9FEF78D228D62A__padding[24];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.Rendering.DebugUI/Button
 struct Button_t94987D29C31193E49E17586BF7642576A0F6CE7A  : public Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF
